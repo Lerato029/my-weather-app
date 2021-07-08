@@ -28,12 +28,12 @@ export default function Display(props) {
                 <sup>°C</sup>
               </h5>
               <h5>
-                {/* <Image
+                <Image
                   src={`http://openweathermap.org/img/w/${status.icon}.png`}
                   alt="Weather Icon"
                   width={60}
                   height={60}
-                /> */}
+                />
               </h5>
               <h5 className="text-capitalize ">{status.description}</h5>
             </div>
