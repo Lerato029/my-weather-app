@@ -1,16 +1,23 @@
 /* =================================================================The Display Component======================================================= */
 //import React to create component
 import React from "react";
+import Image from "next/image";
 
 export default function Display(props) {
   //deconstructing code for better legibility
   const { cityData } = props;
 
+
   //Component returns a div element displaying the weather of the city selected
   //when the form in the App Component is submitted
   return (
-    <div className="display">
-      <img className="icon img-fluid" src="/icon.png" alt="Icon" />
+    <div className="display my-2">
+      <Image
+        src="/icon.png"
+        alt="Icon "
+        width={250}
+        height={250}
+      />
       <h2 className="">{cityData && cityData.name}</h2>
       {cityData &&
         cityData.weather.map((status) => (
@@ -22,9 +29,10 @@ export default function Display(props) {
               </h5>
               <h5>
                 <img
-                  className="img img-fluid"
                   src={`http://openweathermap.org/img/w/${status.icon}.png`}
                   alt="Weather Icon"
+                  width={60}
+                  height={60}
                 />
               </h5>
               <h5 className="text-capitalize ">{status.description}</h5>
