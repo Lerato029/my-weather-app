@@ -7,10 +7,6 @@ import React from "react";
 import Display from "./Display";
 import Form from "./Form";
 
-/* variable storing weather map API */
-const apiKey = process.env.NEXT_PUBLIC_REACT_APP_L2TASK14_KEY;
-const apiUrl = `http://api.openweathermap.org/data/2.5/find?lat=-26.195246&lon=28.034088&units=metric&cnt=50&appid=${apiKey}`;
-
 /*=============================================================================class component */
 class App extends React.Component {
   /* using constructor to initialize state of the App component */
@@ -30,6 +26,10 @@ class App extends React.Component {
   /* running fetch method here to get the data from the API when the page loads */
 
   componentDidMount() {
+    /* variable storing weather map API */
+    const apiKey = process.env.NEXT_PUBLIC_KEY;
+    const apiUrl = `http://api.openweathermap.org/data/2.5/find?lat=-26.195246&lon=28.034088&units=metric&cnt=50&appid=${apiKey}`;
+
     fetch(apiUrl)
       //.then statement returning a promise with data that is parsed through the json method
       .then((res) => res.json())
@@ -102,7 +102,6 @@ class App extends React.Component {
     } else if (!loaded) {
       return (
         <div className="App">
-          
           <div className="loadingio-spinner-ripple-snpd0rykd4">
             <div className="ldio-qpv6o7cx35m">
               <div></div>

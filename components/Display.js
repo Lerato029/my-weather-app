@@ -12,6 +12,7 @@ export default function Display(props) {
   //when the form in the App Component is submitted
   return (
     <div className="display my-2">
+      
       <Image
         src="/icon.png"
         alt="Icon "
