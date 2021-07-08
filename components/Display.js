@@ -28,7 +28,7 @@ export default function Display(props) {
                 <sup>°C</sup>
               </h5>
               <h5>
-                <img
+                <Image
                   src={`http://openweathermap.org/img/w/${status.icon}.png`}
                   alt="Weather Icon"
                   width={60}

@@ -3,8 +3,6 @@
 /* import statement to be able to create React component */
 import React from "react";
 
-import Image from "next/image";
-
 //importing Components
 import Display from "./Display";
 import Form from "./Form";
@@ -104,13 +102,7 @@ class App extends React.Component {
     } else if (!loaded) {
       return (
         <div className="App">
-          {/* <Image
-            className="loading"
-            src="https://media.giphy.com/media/W22b2eea2XxB6DiTWg/giphy.gif"
-            alt="Loading"
-            width={500}
-            height={500}
-          /> */}
+          
           <div className="loadingio-spinner-ripple-snpd0rykd4">
             <div className="ldio-qpv6o7cx35m">
               <div></div>
