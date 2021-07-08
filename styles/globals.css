@@ -107,8 +107,9 @@ h4 {
     height: 120vh;
   }
   .display {
-    padding-top: 6%;
-    width: 90% !important;
+    padding: 6%;
+    width: 80% !important;
+  
   }
   .icon {
     width: 125px !important;
@@ -122,12 +123,6 @@ h4 {
   }
 }
 
-@media screen and (width: 360px) {
-  .display {
-    padding-top: 6%;
-    width: 200% !important;
-  }
-}
 
 
 
