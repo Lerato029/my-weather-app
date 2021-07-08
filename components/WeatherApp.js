@@ -29,7 +29,7 @@ class App extends React.Component {
     /* variable storing weather map API */
     const apiKey = process.env.NEXT_PUBLIC_KEY;
     const apiUrl = `http://api.openweathermap.org/data/2.5/find?lat=-26.195246&lon=28.034088&units=metric&cnt=50&appid=${apiKey}`;
-
+    console.log(apiKey);
     fetch(apiUrl)
       //.then statement returning a promise with data that is parsed through the json method
       .then((res) => res.json())
