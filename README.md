@@ -12,7 +12,7 @@
 npm install
 
 # Run the React app
-npm start
+npm run dev
 
 ```
 
